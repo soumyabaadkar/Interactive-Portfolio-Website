@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soumya's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+  <header id="header">
+    <div class="hero-container">
+      <div class="overlay"></div> <!-- The gradient overlay -->
+      <div class="container">
+        <nav>
+          <img src="logoimg.PNG" class="logo" alt="Logo">
+        
+          <div class="nav-toggle" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+          </div>
+        
+          <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        
+          <button onclick="toggleDarkMode()" class="dark-mode-btn">
+            <i id="theme-icon" class="bi"></i>
+          </button>
+        </nav>
+        
+               
+      <div class="header-text">
+        <p class="fade-in-top">Front-End Developer</p>
+        <h1 class="fade-in-delay">Hi, I'm <span>Soumya Baadkar</span></h1>
+      </div>  
+    </div>
+    </div>
+
+  </header>
+
+  <section id="about" class="about container">
+    <h2 class="sub-title animated-title">About Me</h2>
+    <p class="fade-in">
+      Hey there! I’m a self-driven and creative <span class="highlight">Front-End Developer</span> passionate about building 
+      responsive, accessible, and beautiful web apps. I'm diving deep into <span class="highlight">Full-Stack Web Development</span> and love clean, scalable code. 
+      I value <span class="highlight">continuous learning, collaboration</span>, and growing beyond my comfort zone.
+    </p>
+    
+    <p class="fade-in" style="margin-top: 20px;">
+      My current focus is mastering the <span class="highlight">MERN stack</span> and building real-world projects that solve problems and bring ideas to life. 
+      I enjoy turning complex challenges into elegant, intuitive designs and love the balance of logic and creativity that development offers.
+      Alongside coding, I’m deeply interested in <span class="highlight">UI/UX design</span>, accessibility, and creating seamless user experiences. 
+      I'm always exploring ways to improve not just how things look — but how they feel and function.
+    </p>
+    
+    <p class="fade-in" style="margin-top: 20px;">
+      I believe in the power of <span class="highlight">discipline, curiosity, and consistency</span>. Whether it's learning a new framework, collaborating on a team, 
+      or pushing through a debugging session — I approach it all with a growth mindset and a love for the process.
+    </p>
+    
+  </section>
+  
+  <section id="skills" class="skills container">
+    <h2 class="sub-title animated-title">Skills</h2>
+    <ul class="skills-grid">
+      <li class="skill-card"><span>UI/UX</span><br>Designing Web Interfaces</li>
+      <li class="skill-card"><span>Front-End Development</span><br>HTML5, CSS3, JavaScript, React.js, Bootstrap, Flexbox & Grid</li>
+      <li class="skill-card"><span>Tools/Technology</span><br>VS Code, Chrome DevTools, Figma (basic), Git, GitHub</li>
+      <li class="skill-card"><span>Soft Skills</span><br>Problem-Solving, Communication, Teamwork, Time Management, Growth Mindset</li>
+    </ul>
+  </section>
+  
+  <section id="projects" class="projects container">
+    <h2 class="sub-title animated-title">Projects</h2>
+    <h3 class="project-title">1. To-Do List App</h3>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="card hover-img">
+        <img src="todoimg1.png" data-hover="todoimg2.png" alt="To-Do App">
+        <div class="card-content">
+          <h3>To-Do List App</h3>
+          <p>Minimalist to-do app using localStorage that helps to manage tasks.</p>
+          <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+      
+      </div>
+      <h3 class="project-title">2. Mini E-Commerce Store</h3>
+      <div class="project-grid">
+        <!-- Project 2 -->
+        <div class="card hover-img">
+          <img src="ecomimg1.png" data-hover="ecomimg2.png" alt="Mini E-Commerce Store">
+          <div class="card-content">
+            <h3>Mini E-Commerce Store</h3>
+            <p>A responsive mini e-commerce website with cart functionality and checkout features</p>
+            <p><strong>Tech: HTML, CSS, Bootstrap, JavaScript</strong></p>
+          </div>
+        </div>
+        </div>
+      <h3 class="project-title">3. Weather App</h3>
+    <div class="project-grid">
+      <!-- Project 3 -->
+      <div class="card hover-img">
+        <img src="appimg1.png" data-hover="appimg2.png" alt="Weather App">
+        <div class="card-content">
+          <h3>Weather App</h3>
+          <p>Real-time weather app using OpenWeather API</p>
+          <p><strong>Tech:</strong> HTML, CSS, JavaScript,OpenWeatherMap API</p>
+        </div>
+      </div>
+      
+      </div>
+      
+      
+    </div>
+  </section>
+  <section id="contact" class="contact container">
+    <h2 class="sub-title animated-title">Contact Me</h2>
+    <div class="contact-grid">
+      <form class="contact-form" onsubmit="return validateForm()" novalidate>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <p class="footer-text fade-in-bottom">   © 2025 Soumya Baadkar </p>
+    <div class="footer-icons fade-in-bottom">
+      <a href="mailto:soumyabaadkar@email.com" target="_blank" title="Email"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://github.com/soumyabaadkar" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </footer>
+  
+  
+</body>
+</html>
